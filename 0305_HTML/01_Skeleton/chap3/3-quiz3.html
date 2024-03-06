@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form control</title>
+</head>
+<body>
+    <table border="1" width="500" height="200">
+        <caption>
+            form control test - 회원가입
+        </caption>
+        <tbody>
+            <tr>
+                <td>이름</td>
+                <td colspan="2"><input type="text"></td>
+            </tr>
+            <tr>
+                <td>아이디</td>
+                <td colspan="2"><input type="text"><button>중복확인</button></td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td colspan="2"><input type="password"></td>
+            </tr>
+            <tr>
+                <td>비밀번호확인</td>
+                <td colspan="2"><input type="password"></td>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td colspan="2">
+                    <input type="radio" name="gender" value="남">
+                    <input type="radio" name="gender" value="여">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">좋아하는 과일</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="checkbox" name="fruits" value="사과">
+                    <input type="checkbox" name="fruits" value="수박">
+                    <input type="checkbox" name="fruits" value="딸기">
+                    <input type="checkbox" name="fruits" value="포도">
+                </td>
+            </tr>
+            <tr>
+                <td>이메일</td>
+                <td colspan="2">
+                    <input type="text">
+                    @
+                    <select name="email">
+                        <option value="네이버"></option>
+                        <option value="다음"></option>
+                        <option value="구글"></option>
+                    </select>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>연락처</td>
+                <td colspan="2">
+                    <select name="num">
+                        <option value="02"></option>
+                        <option value="041"></option>
+                        <option value="010"></option>
+                    </select>
+                    -
+                    <input type="text">
+                    -
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3"><button>회원가입</button><button type="reset">초기화</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
