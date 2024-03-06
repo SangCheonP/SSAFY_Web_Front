@@ -1,0 +1,94 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* 헤더영역 시작 */
+header{
+    height: 70px;
+    /* background-color: yellow; */
+    box-shadow: 1px 1px 10px gray;
+}
+
+nav{
+    /* 부모 영역을 100% 사용*/
+    /* background-color: lightgray; */
+    height: 100%;
+    width: 70%;
+    /* 중간으로 오게 */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav > a{
+    float: left;
+}
+
+.header_nav_menu{
+    float: right;
+}
+
+.header_nav_menu div{
+    float: right;
+    height: 70px;
+    line-height: 70px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.header_nav_home{
+    height: 70px;
+    line-height: 70px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header_nav_notice{
+    height: 70px;
+    line-height: 70px;
+}
+/* 헤더영역 끝 */
+
+/* 중앙 컨텐츠 전체 스타일 시작 */
+.content{
+    background-color: blanchedalmond;
+    height: 100%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 중앙 컨텐츠 왼쪽 스타일 시작 */
+.content_left{
+    background-color: pink;
+    float: left;
+    width: 25%;
+}
+/* 중앙 컨텐츠 왼쪽 스타일 끝 */
+
+
+/* 중앙 컨텐츠 오른쪽 스타일 시작 */
+.content_right{
+    background-color: aqua;
+    float: right;
+    width: 75%;
+}
+/* 중앙 컨텐츠 오른쪽 스타일 끝 */
+
+/* 중앙 컨텐츠 전체 스타일 끝 */
+
+/* 푸터 스타일 시작 */
+footer{
+    background-color: lightblue;
+    clear: both;
+}
+/* 푸터 스타일 끝 */
