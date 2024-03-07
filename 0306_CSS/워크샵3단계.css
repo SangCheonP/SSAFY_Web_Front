@@ -1,94 +1,347 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
-
 
 /* 헤더영역 시작 */
-header{
-    height: 70px;
-    /* background-color: yellow; */
-    box-shadow: 1px 1px 10px gray;
+header {
+  height: 70px;
+  /* background-color: yellow; */
+  box-shadow: 1px 1px 10px gray;
 }
 
-nav{
-    /* 부모 영역을 100% 사용*/
-    /* background-color: lightgray; */
-    height: 100%;
-    width: 70%;
-    /* 중간으로 오게 */
-    margin-left: auto;
-    margin-right: auto;
+nav {
+  /* 부모 영역을 100% 사용*/
+  /* background-color: lightgray; */
+  height: 100%;
+  width: 70%;
+  /* 중간으로 오게 */
+  margin-left: auto;
+  margin-right: auto;
 }
 
-nav > a{
-    float: left;
+nav > a {
+  float: left;
+  margin: 0 5px;
 }
 
-.header_nav_menu{
-    float: right;
+.header_nav_menu {
+  float: right;
 }
 
-.header_nav_menu div{
-    float: right;
-    height: 70px;
-    line-height: 70px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-
+.header_nav_menu div {
+  float: right;
+  height: 70px;
+  line-height: 70px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.header_nav_home{
-    height: 70px;
-    line-height: 70px;
-    font-size: 30px;
-    font-weight: bold;
+.header_nav_home {
+  height: 70px;
+  line-height: 70px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
-.header_nav_notice{
-    height: 70px;
-    line-height: 70px;
+.header_nav_notice {
+  height: 70px;
+  line-height: 70px;
 }
 /* 헤더영역 끝 */
 
 /* 중앙 컨텐츠 전체 스타일 시작 */
-.content{
-    background-color: blanchedalmond;
-    height: 100%;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+.content {
+  background-color: blanchedalmond;
+  height: 100%;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 중앙 컨텐츠 왼쪽 스타일 시작 */
-.content_left{
-    background-color: pink;
-    float: left;
-    width: 25%;
+.content_left {
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.content_left img {
+  margin: 5px 0;
+}
+
+.content_left_open {
+  background-color: gray;
+  border-radius: 5%;
+  line-height: 230%;
+  width: 100%;
+  height: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.content_left_close {
+  display: none;
+}
+
+.content_left_store_seoul {
+  background-color: lightskyblue;
+  height: 110px;
+  margin-bottom: 5px;
+  border-radius: 5%;
+}
+
+.content_left_store_seoul a {
+  display: block;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-left: 15px;
+  text-align: left;
+}
+
+.content_left_store_seoul li {
+  margin: 10px 0;
+  text-align: start;
+  margin-left: 35px;
+}
+
+.content_left_store_dj {
+  background-color: lightskyblue;
+  height: 110px;
+  margin-bottom: 5px;
+  border-radius: 5%;
+}
+
+.content_left_store_dj a {
+  display: block;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-left: 15px;
+  text-align: left;
+}
+
+.content_left_store_dj li {
+  margin: 10px 0;
+  text-align: start;
+  margin-left: 35px;
+}
+
+.content_left_store_gm {
+  background-color: lightskyblue;
+  height: 110px;
+  margin-bottom: 5px;
+  border-radius: 5%;
+}
+
+.content_left_store_gm a {
+  display: block;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-left: 15px;
+  text-align: left;
+}
+
+.content_left_store_gm li {
+  margin: 10px 0;
+  text-align: start;
+  margin-left: 35px;
+}
+
+.content_left_store_kj {
+  background-color: lightskyblue;
+  height: 110px;
+  margin-bottom: 5px;
+  border-radius: 5%;
+}
+
+.content_left_store_kj a {
+  display: block;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-left: 15px;
+  text-align: left;
+}
+
+.content_left_store_kj li {
+  margin: 10px 0;
+  text-align: start;
+  margin-left: 35px;
+}
+
+.content_left_vote {
+  border: 1px solid black;
+  border-radius: 2%;
+  padding: 10px 5px;
+  margin-top: 15px;
+}
+
+.content_left_vote_title {
+  color: rgb(128, 120, 120);
+  font-weight: bold;
+  font-size: 20px;
+  margin: 7px 0;
+}
+
+.content_left_vote_content {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: start;
+}
+
+.content_left_vote_option {
+  text-align: left;
+  margin-left: 15px;
+  margin: 5px;
+}
+
+.content_left_vote_btn {
+  text-align: right;
+  margin-right: 10px;
+  margin: 10px 0;
+  padding-right: 15px;
+}
+
+.button {
+  height: 30px;
+  background-color: white;
+  border-radius: 7%;
+  box-shadow: 2px 2px lightgrey;
+  margin: 10px 0;
+}
+
+.primary_btn {
+  background-color: blueviolet;
+  color: white;
+}
+
+.content_left_vote_date {
+  font-weight: bold;
+  font-size: 17px;
 }
 /* 중앙 컨텐츠 왼쪽 스타일 끝 */
 
-
 /* 중앙 컨텐츠 오른쪽 스타일 시작 */
-.content_right{
-    background-color: aqua;
-    float: right;
-    width: 75%;
+.content_right {
+  float: right;
+  width: 75%;
 }
+
+.content_right_programming {
+  padding-left: 20px;
+}
+
+.content_right_programming h3 {
+  clear: both;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.content_right_programming li {
+  float: left;
+  border: 1px solid black;
+  text-align: center;
+  margin: 15px 10px;
+  width: 170px;
+  height: 230px;
+}
+
+.content_right_ase {
+  padding-left: 20px;
+}
+
+.content_right_ase h3 {
+  clear: both;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.content_right_ase li {
+  display: inline;
+  float: left;
+  border: 1px solid black;
+  text-align: center;
+  margin: 15px 10px;
+  width: 170px;
+  height: 230px;
+}
+
+.content_right_pop {
+  padding-left: 20px;
+  clear: left;
+  float: left;
+  text-align: center;
+  margin: 15px auto;
+}
+
+.content_right_pop table {
+  border-collapse: collapse;
+}
+
+.content_right_pop h3 {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.content_right_pop_body td {
+  padding: 5px 10px;
+}
+
+.content_right_pop_body tr:nth-child(odd) {
+  background-color: lightgray;
+}
+
+.content_right_recent {
+  float: left;
+  text-align: center;
+  margin: 15px 25px;
+}
+
+.content_right_recent table {
+  border-collapse: collapse;
+}
+
+.content_right_recent h3 {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.content_right_recent th {
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+
+.content_right_recent td {
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+
 /* 중앙 컨텐츠 오른쪽 스타일 끝 */
 
 /* 중앙 컨텐츠 전체 스타일 끝 */
 
 /* 푸터 스타일 시작 */
-footer{
-    background-color: lightblue;
-    clear: both;
+footer {
+  background-color: lightblue;
+  clear: both;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.footer_option li {
+  float: left;
+  padding: 20px 17px;
 }
 /* 푸터 스타일 끝 */

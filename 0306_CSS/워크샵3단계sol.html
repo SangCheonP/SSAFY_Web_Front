@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>SSAFY BOOK CAFE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/0306_CSS/워크샵3단계.css">
+    <link rel="stylesheet" href="/0306_CSS/워크샵3단계.css" />
   </head>
   <body>
     <!-- 상단 Header Start  -->
@@ -48,10 +48,10 @@
         <!-- 프로필 사진 End  -->
         <!-- 메뉴 Start  -->
         <div>
-          <div>전국매장펼치기</div>
-          <div>전국매장접기</div>
+          <div class="content_left_open">전국매장펼치기</div>
+          <div class="content_left_close">전국매장접기</div>
           <ul>
-            <li>
+            <li class="content_left_store_seoul">
               <a>서울</a>
               <div>
                 <ul>
@@ -60,7 +60,7 @@
                 </ul>
               </div>
             </li>
-            <li>
+            <li class="content_left_store_dj">
               <a>대전</a>
               <div>
                 <ul>
@@ -69,7 +69,7 @@
                 </ul>
               </div>
             </li>
-            <li>
+            <li class="content_left_store_gm">
               <a>구미</a>
               <div>
                 <ul>
@@ -78,7 +78,7 @@
                 </ul>
               </div>
             </li>
-            <li>
+            <li class="content_left_store_kj">
               <a>광주</a>
               <div>
                 <ul>
@@ -91,11 +91,13 @@
         </div>
         <!-- 메뉴 End  -->
         <!-- 설문조사 Start  -->
-        <div>
-          <div>[ 당신의 선택 ]</div>
-          <div>공부하고 싶은 분야를 골라 주세요!!!</div>
+        <div class="content_left_vote">
+          <div class="content_left_vote_title">[ 당신의 선택 ]</div>
+          <div class="content_left_vote_content">
+            공부하고 싶은 분야를 골라 주세요!!!
+          </div>
           <div>
-            <ul>
+            <ul class="content_left_vote_option">
               <li>
                 <input type="radio" name="" id="" />
                 <img src="img/poll/python.png" width="70" alt="" /> Python
@@ -114,11 +116,13 @@
               </li>
             </ul>
           </div>
-          <div>
-            <button>투표하기</button>
-            <button>결과보기</button>
+          <div class="content_left_vote_btn">
+            <button class="button primary_btn">투표하기</button>
+            <button class="button">결과보기</button>
           </div>
-          <div>투표기간 : 21.03.01 ~ 21.03.31</div>
+          <div class="content_left_vote_date">
+            투표기간 : 21.03.01 ~ 21.03.31
+          </div>
         </div>
         <!-- 설문조사 End  -->
       </div>
@@ -127,7 +131,7 @@
       <!-- 중앙 Content Start  -->
       <div class="content_right">
         <!-- 프로그래밍 Section Start  -->
-        <section>
+        <section class="content_right_programming">
           <h3>[ 프로그래밍 언어 ]</h3>
           <ul>
             <li>
@@ -167,7 +171,7 @@
         <!-- 프로그래밍 Section End  -->
 
         <!-- 에세이 Section Start  -->
-        <section>
+        <section class="content_right_ase">
           <h3>[ 에세이 ]</h3>
           <ul>
             <li>
@@ -207,7 +211,7 @@
         <!-- 에세이 Section End  -->
 
         <!-- 인기글 Section Start  -->
-        <section>
+        <section class="content_right_pop">
           <article>
             <h3>[ 인기글 ]</h3>
             <table>
@@ -218,7 +222,7 @@
                   <th>조회수</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody class="content_right_pop_body">
                 <tr>
                   <td>자바공부 쉽게하는법!!</td>
                   <td>이쎄림</td>
@@ -241,7 +245,7 @@
         <!-- 인기글 Section End  -->
 
         <!-- 최신글 Section Start  -->
-        <section>
+        <section class="content_right_recent">
           <article>
             <h3>[ 최신글 ]</h3>
             <table>
@@ -280,7 +284,7 @@
 
     <!-- 하단 Footer Start  -->
     <footer>
-      <ul>
+      <ul class="footer_option">
         <li><a href="#">카페소개</a></li>
         <li><a href="#">개인정보처리방침</a></li>
         <li><a href="#">이용약관</a></li>
