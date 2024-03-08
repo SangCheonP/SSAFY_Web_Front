@@ -1,0 +1,59 @@
+#title{
+    text-align: center;
+}
+
+#btn-id{
+    display: block;
+    width: 150px;
+    height: 70px;
+    background-color: lightpink;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto 10px;
+}
+
+#view{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: lightgray;
+}
+
+.ball{
+    width: 70px;
+    height: 70px;
+    background-color: blue;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ball0{
+    background-color: red;
+}
+
+.ball1{
+    background-color: orangered;
+}
+
+.ball2{
+    background-color: yellow;
+}
+
+.ball3{
+    background-color: green;
+}
+
+.ball4{
+    background-color: violet;
+}
+
+.ball5{
+    background-color: brown;
+}

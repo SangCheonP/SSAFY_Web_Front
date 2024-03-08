@@ -1,0 +1,138 @@
+*{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* 로고 start */
+.logo{
+    text-align: center;
+    margin: 15px 0px;
+}
+/* 로고 end */
+
+/* 네비게이션바 start */
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    height: 45px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.nav a {
+    margin-right: 10px;
+    flex-basis: 50px;
+    text-align: center;
+    color: lightgray;
+    background-color: black;
+}
+/* 네비게이션바 end */
+
+/* 중앙 content start */
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px 50px;
+}
+
+
+/* 중앙 left content start */
+.content-left{
+}
+
+.content-left-profile{
+    text-align: center;
+}
+
+#content-left-btn-make{
+    width: 230px;
+    height: 35px;
+    font-size: 15px;
+    background-color: skyblue;
+}
+
+.content-left-submit{
+    border: 1px solid black;
+    
+}
+
+.content-left-submit > h2, h4{
+    text-align: center;
+    margin: 15px 0;
+}
+
+.content-left-submit-option{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.content-left-submit-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px 5px;
+}
+
+.button{
+    border: 1px solid skyblue;
+    margin: 0 3px;
+    background-color: lightcyan;
+}
+
+.primary-btn{
+    background-color: cadetblue;
+}
+
+.content-left-submit-date{
+    text-align: end;
+    margin-right: 5px;
+    font-size: 12px;
+}
+/* 중앙 left content end */
+
+
+/* 중앙 main content start */
+.content-main{
+    flex-grow: 9;
+    height: auto;
+    margin: 0 35px;
+}
+
+.content-main-block1{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    margin-bottom: 20px;
+}
+
+.content-main-block1 h2, h5, div, p{
+    margin: 15px 0;
+}
+
+
+.content-main-block2{
+    border: 1px solid red;
+    margin-bottom: 20px;
+}
+/* 중앙 main content end */
+
+/* 하단 footer start */
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: sp;
+    border: 1px solid black;
+}
+
+.footer a{
+    margin: 10px 10px;
+}
+/* 하단 footer end */
+/* 중앙 content end */
