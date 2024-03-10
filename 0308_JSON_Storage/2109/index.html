@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>영화정보사이트</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header>
+      <nav class="header-nav">
+        <div>
+          <a href="#">영화관리</a>
+        </div>
+        <div>
+          <form action="#">
+            <input type="text" placeholder="제목을 입력하세요." />
+            <input type="submit" value="검색" />
+          </form>
+        </div>
+        <div>
+          <a href="#">로그인</a>
+          <a href="#">로그아웃</a>
+          <a href="#">회원가입</a>
+          <a href="#">게시판</a>
+          <a href="#">마이페이지</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Header End -->
+    <!-- Main Start -->
+    <main class="content">
+      <!-- 중앙 영화목록 Start -->
+      <section class="content-movie-list">
+        <h2>영화목록</h2>
+        <br />
+        <ul class="content-movie-list-ul">
+          <li>
+            <div class="list-item">
+              <div>
+                <img src="img/eternals.jpg" alt="" />
+              </div>
+              <div class="movie-info">
+                <div>
+                  <div>이터널스</div>
+                  <hr />
+                  <div>액션</div>
+                  <div>클로이자오</div>
+                  <div>155분</div>
+                </div>
+                <button class="like-btn">찜</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="list-item">
+              <div>
+                <img src="img/venom.jpg" alt="" />
+              </div>
+              <div class="movie-info">
+                <div>
+                  <div>베놈 2: 렛 데어 비 카니지</div>
+                  <hr />
+                  <div>액션</div>
+                  <div>앤디 서키스</div>
+                  <div>97분</div>
+                </div>
+                <button class="like-btn">찜</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="list-item">
+              <div>
+                <img src="img/parasite.jpg" alt="" />
+              </div>
+              <div class="movie-info">
+                <div>
+                  <div>기생충</div>
+                  <hr />
+                  <div>드라마</div>
+                  <div>봉준호</div>
+                  <div>131분</div>
+                </div>
+                <button class="like-btn">찜</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="list-item">
+              <div>
+                <img src="img/harrypoter_stone.jpg" alt="" />
+              </div>
+              <div class="movie-info">
+                <div>
+                  <div>해리포터와 마법사의돌</div>
+                  <hr />
+                  <div>판타지</div>
+                  <div>크리스 콜럼버스</div>
+                  <div>152분</div>
+                </div>
+                <button class="like-btn">찜</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="list-item">
+              <div>
+                <img src="img/harrypoter_room.jpg" alt="" />
+              </div>
+              <div class="movie-info">
+                <div>
+                  <div>해리포터와 비밀의 방</div>
+                  <hr />
+                  <div>판타지</div>
+                  <div>크리스 콜럼버스</div>
+                  <div>162분</div>
+                </div>
+                <button class="like-btn">찜</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="list-item">
+              <div>
+                <img src="img/load_of_ring.jpg" alt="" />
+              </div>
+              <div class="movie-info">
+                <div>
+                  <div>반지의제왕 : 왕의 귀환</div>
+                  <hr />
+                  <div>판타지</div>
+                  <div>피터 잭슨</div>
+                  <div>263분</div>
+                </div>
+                <button class="like-btn">찜</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="list-item">
+              <div>
+                <img src="img/dune.jpg" alt="" />
+              </div>
+              <div class="movie-info">
+                <div>
+                  <div>듄</div>
+                  <hr />
+                  <div>모험</div>
+                  <div>드니 뷜뇌브</div>
+                  <div>155분</div>
+                </div>
+                <button class="like-btn">찜</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="list-item">
+              <div>
+                <img src="img/tomb_of_the_river.jpg" alt="" />
+              </div>
+              <div class="movie-info">
+                <div>
+                  <div>강릉</div>
+                  <hr />
+                  <div>범죄</div>
+                  <div>윤영빈</div>
+                  <div>119분</div>
+                </div>
+                <button class="like-btn">찜</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- 중앙 영화목록 End -->
+      <!-- 오른쪽 찜리스트 Strat -->
+      <aside class="content-movie-like">
+        <h3>찜리스트</h3>
+        <div>아직 찜한 영화가 없습니다....</div>
+      </aside>
+      <!-- 오른쪽 찜리스트 End -->
+    </main>
+    <!-- Main End -->
+    <!-- Footer Start -->
+    <footer>
+      <ul class="footer-list">
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">오시는길</a></li>
+        <li>&copy; SSAFY OO_O반_김싸피</li>
+      </ul>
+    </footer>
+    <!-- Footer End -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
