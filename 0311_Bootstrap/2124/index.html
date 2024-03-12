@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>SSAFY BOOK CAFE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 상단 Header Start  -->
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">SSAFY BookCafe</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mynavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">공지사항</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">로그인</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">회원가입</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- 상단 Header End  -->
+
+    <!-- 중앙 Contents Start  -->
+    <div class="container">
+      <div class="row">
+        <!-- 왼쪽 Content Start  -->
+      <div class="col-4">
+        <!-- 프로필 사진 Start  -->
+        <div>
+          <img src="img/noimg.png" width="120" alt="" style="display: none" />
+          <img id="profile_img" src="img/profile.png" width="120" alt="" />
+        </div>
+        <!-- 프로필 사진 End  -->
+        <!-- 메뉴 Start  -->
+        <nav class="navbar navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">전국 매장 펼치기</a>
+          </div>
+        </nav>
+        <nav class="navbar navbar-light bg-light" style="display: none;">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">전국 매장 접기</a>
+          </div>
+        </nav>
+        <div class="container border">
+          <div class="container">
+            <nav class="navbar bg-light">
+              <ul style="list-style-type: none;">
+                <li>
+                  <a>서울</a>
+                  <div>
+                    <ul>
+                      <li>역삼점</li>
+                      <li>선릉점</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a>대전</a>
+                  <div>
+                    <ul>
+                      <li>학하점</li>
+                      <li>봉명점</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a>구미</a>
+                  <div>
+                    <ul>
+                      <li>인동점</li>
+                      <li>공단점</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a>광주</a>
+                  <div>
+                    <ul>
+                      <li>하남산단점</li>
+                      <li>광주역점</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- 메뉴 End  -->
+        <!-- 설문조사 Start  -->
+        <div>
+          <div class="container border">
+            <div>[ 당신의 선택 ]</div>
+          <div>공부하고 싶은 분야를 골라 주세요!!!</div>
+          <div>
+            <ul>
+              <li>
+                <input type="radio" name="" id="" />
+                <img src="img/poll/python.png" width="70" alt="" /> Python
+              </li>
+              <li>
+                <input type="radio" name="" id="" />
+                <img src="img/poll/html5.png" width="70" alt="" /> HTML5
+              </li>
+              <li>
+                <input type="radio" name="" id="" />
+                <img src="img/poll/vuejs.png" width="70" alt="" /> Vue.js
+              </li>
+              <li>
+                <input type="radio" name="" id="" />
+                <img src="img/poll/java.png" width="70" alt="" /> Java
+              </li>
+            </ul>
+          </div>
+          </div>
+          <div class="container border">
+            <div>
+              <button>투표하기</button>
+              <button>결과보기</button>
+            </div>
+            <div>투표기간 : 21.03.01 ~ 21.03.31</div>
+          </div>
+        </div>
+        <!-- 설문조사 End  -->
+      </div>
+      <!-- 왼쪽 Content End  -->
+
+      <!-- 중앙 Content Start  -->
+      <div class="col-8">
+        <!-- 프로그래밍 Section Start  -->
+        <div class="container">
+          <h3>[ 프로그래밍 언어 ]</h3>
+          <div class="row">
+              <div class="col-md">
+                <div class="card">
+                    <div class="card-body">
+                      <img src="img/book/p_book01.png" width="130" alt="" />
+                    </div>
+                    <div class="card-footer">Do it! 점프 투 파이썬 (18,800원)</div>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="card">
+                    <div class="card-body">
+                      <img src="img/book/p_book02.png" width="130" alt="" />
+                    </div>
+                    <div class="card-footer">HTML5 API 프로그래밍(23,000원)</div>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="card">
+                    <div class="card-body">
+                      <img src="img/book/p_book03.png" width="130" alt="" />
+                    </div>
+                    <div>백견불여일타 Vue.js입문 (22,000원)</div>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="card">
+                    <div class="card-body">
+                      <img src="img/book/p_book04.png" width="130" alt="" />
+                    </div>
+                    <div class="card-footer">Java 프로그래밍 (26,500원)</div>
+                </div>
+              </div>
+            </ul>
+          </div>
+        <!-- 프로그래밍 Section End  -->
+
+        <!-- 에세이 Section Start  -->
+        <div class="container">
+          <h3>[ 에세이 ]</h3>
+          <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <img src="img/book/e_book01.png" width="130" alt="" />
+                    </div>
+                    <div class="card-footer">2인조 (14800원)</div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <img src="img/book/e_book02.png" width="130" alt="" />
+                    </div>
+                    <div class="card-footer">안녕, 소중한 사람 (15,000원)</div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <img src="img/book/e_book03.png" width="130" alt="" />
+                    </div>
+                    <div>꽃을 보든 너를 본다 (10,000원)</div>
+                  </div class="card-footer">
+                </div>
+
+                <div class="col">
+                  <div class="card">
+                    <div>
+                      <img src="img/book/e_book04.png" width="130" alt="" />
+                    </div>
+                    <div>곰돌이 푸, 행복한 일은 매일 있어 (12,000원)</div>
+                  </div>
+                </div>
+        </div>
+      </div>
+      <!-- 에세이 Section End  -->
+
+      <!-- 인기글 Section Start  -->
+      <div class="row">
+        <div class="col-6">
+          <h3>[ 인기글 ]</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>조회수</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>자바공부 쉽게하는법!!</td>
+                <td>이쎄림</td>
+                <td>1756</td>
+              </tr>
+              <tr>
+                <td>알고리즘은 자바? 파이썬?</td>
+                <td>홍정밍</td>
+                <td>998</td>
+              </tr>
+              <tr>
+                <td>스프링 정복하기~</td>
+                <td>김나켠</td>
+                <td>856</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- 인기글 Section End  -->
+
+        <!-- 최신글 Section Start  -->
+        <div class="col-6">
+          <h3>[ 최신글 ]</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>조회수</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>web 관련 질문있어요.</td>
+                <td>이주녕</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>vuejs는 이렇게 공부해보세요.</td>
+                <td>조밍기</td>
+                <td>98</td>
+              </tr>
+              <tr>
+                <td>꽃길만 걸어요.</td>
+                <td>류해면</td>
+                <td>56</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- 최신글 Section End  -->
+    </div>
+      <!-- 중앙 Content End  -->
+    </div>
+    <!-- 중앙 Contents End  -->
+
+    <div class="m-5"></div>
+    </div>
+    <!-- 하단 Footer Start  -->
+    <footer class="navbar navbar-expand-sm navbar-dark bg-dark fixed-bottom">
+      <div class="container-fluid justify-content-center">
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">카페소개</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">개인정보처리방침</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">이용약관</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">오시는길</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">&copy; SSAFY Corp.</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- 하단 Footer End  -->
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>비동기 통신을 위한 html 화면입니다.</h3>
+    <button id="btnJson">json 데이터를 읽어옵니다.</button>
+    <button id="btnXml">xml 데이터를 읽어옵니다.</button>
+    <div id="divResult">읽어온 데이터를 보여줄 영역입니다.</div>
+    <script>
+      let btnJson = document.getElementById("btnJson");
+      let btnXML = document.querySelector("#btnXml");
+      let divResult = document.getElementById("divResult");
+
+      btnJson.onclick = function () {
+        fetch("./data/essay.json")
+          .then((response) => {
+            console.log(response);
+            return response.json();
+          })
+          .then((data) => {
+            console.log(data);
+            //divResult.innerText = data;
+
+            let table = document.createElement("table");
+            for (let i = 0; i < data.length; i++) {
+              let tr = document.createElement("tr");
+              let tdTitle = document.createElement("td");
+              tdTitle.appendChild(document.createTextNode(data[i].title));
+              tr.appendChild(tdTitle);
+
+              let tdPrice = document.createElement("td");
+              tdPrice.appendChild(document.createTextNode(data[i].price));
+              tr.appendChild(tdPrice);
+
+              table.appendChild(tr);
+            }
+
+            divResult.innerHTML = "";
+            divResult.appendChild(table);
+          });
+      };
+
+      btnXML.onclick = function () {
+        fetch("./data/programming.xml")
+          .then((resp) => resp.text())
+          .then((data) => {
+            const parser = new DOMParser();
+            const xml = parser.parseFromString(data, "application/xml");
+
+            let bookList = xml.querySelectorAll("book");
+
+            console.log(bookList);
+
+            let table = document.createElement("table");
+            for (let i = 0; i < bookList.length; i++) {
+              let tr = document.createElement("tr");
+
+              let tdTitle = document.createElement("td");
+              tdTitle.appendChild(
+                document.createTextNode(bookList[i].querySelector("title").textContent)
+              );
+              tr.appendChild(tdTitle);
+
+              let tdPrice = document.createElement("price");
+              tdPrice.appendChild(
+                document.createTextNode(bookList[i].querySelector("price").textContent)
+              );
+              tr.appendChild(tdPrice);
+
+              table.appendChild(tr);
+            }
+
+            divResult.innerHTML = "";
+            divResult.appendChild(table);
+          });
+      };
+    </script>
+  </body>
+</html>

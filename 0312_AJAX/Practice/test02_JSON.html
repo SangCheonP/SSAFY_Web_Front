@@ -1,0 +1,97 @@
+<!-- brand: "신라면"
+category1: "식품"
+category2: "라면/면류"
+category3: "라면"
+category4: "봉지라면"
+hprice: ""
+image: "https://shopping-phinf.pstatic.net/main_5639964/5639964597.20230328145600.jpg"
+link: "https://search.shopping.naver.com/gate.nhn?id=5639964597"
+lprice: "4370"
+maker: "농심"
+mallName: "네이버"
+productId: "5639964597"
+productType: "1"
+title: "<b>신라면</b> 농심 120g"-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .head {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <input type="text" id="input" onkeydown="handleSearch(event)" placeholder="검색어" />
+      <button type="button" id="btn" onclick="search()">검색</button>
+    </div>
+    <div>
+      <table border="1" class="body">
+        <tr>
+          <th>이미지</th>
+          <th>상품명</th>
+          <th>최저가</th>
+          <th>바로가기링크</th>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+      function handleSearch(event) {
+        if (event.key === "Enter") {
+          search();
+        }
+      }
+
+      function search() {
+        const searchContent = document.getElementById("input").value;
+        let table = document.querySelector(".body");
+
+        const url = `http://192.168.130.40:9999/startcamp/naver/shop/json?keyword=${searchContent}`;
+
+        fetch(url)
+          .then((resp) => {
+            return resp.json();
+          })
+          .then((data) => {
+            data = data.items;
+
+            for (let i = 0; i < data.length; i++) {
+              var tr = document.createElement("tr");
+              // 이미지
+              var tdImg = document.createElement("img");
+              tdImg.setAttribute("src", data[i].image);
+              tdImg.setAttribute("width", "50px");
+              tdImg.setAttribute("hight", "50px");
+              tr.appendChild(tdImg);
+
+              // 상품명
+              var tdTitle = document.createElement("td");
+              var replaceStr = data[i].title;
+              replaceStr = replaceStr.replace(/(<([^>]+)>)/gi, "");
+              tdTitle.appendChild(document.createTextNode(replaceStr));
+              tr.appendChild(tdTitle);
+
+              // 최저가
+              var tdLprice = document.createElement("td");
+              tdLprice.appendChild(document.createTextNode(data[i].lprice + "원"));
+              tr.appendChild(tdLprice);
+
+              // 바로가기
+              var a = document.createElement("a");
+              a.appendChild(document.createTextNode("[ 바로가기 ]"));
+              a.setAttribute("href", data[i].link);
+              tr.appendChild(a);
+
+              table.appendChild(tr);
+            }
+          });
+      }
+    </script>
+  </body>
+</html>
